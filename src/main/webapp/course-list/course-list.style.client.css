@@ -1,0 +1,129 @@
+body{
+    background-color: lightgray;
+}
+
+.header{
+    padding-top:10px;
+    padding-bottom:10px;
+    background: lightblue;
+    font-weight: white;
+}
+
+.new-course-btn{
+    border-radius:50% !important;
+    background-color: indianred;
+    border: none;
+}
+.course-header-row{
+    margin-top:1px;
+    padding:15px;
+    font-weight: bold;
+}
+.border-bottom{
+2px white
+}
+
+
+
+
+
+
+
+.custom-form input[type="text"]{
+    width:240px !important;
+    margin-right: 5px
+}
+
+.table-background {
+background-color: black;
+}
+.new-course-btn-bottom{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 30px;
+}
+.fa-plus{
+    color: white;
+}
+
+.course-header-row{
+    margin-top:1px;
+    padding:15px;
+    font-weight: bold;
+}
+.border-bottom{
+2px white
+}
+
+
+.course-list{
+    margin-bottom: 10px;
+    z-index:-999999
+}
+
+
+.modify-day{
+    color: #36465d;
+    font-weight: bold;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size: 18px;
+}
+
+.course{
+    padding-top:10px;
+    padding-bottom:10px;
+    border-top:1px solid darkgray;
+    border-right:1px solid darkgray;
+    border-left:1px solid darkgray;
+    background: whitesmoke;
+}
+
+.course-title{
+    color: #36465d;
+    font-weight: normal;
+}
+.course-selection{
+    color: #36465d;
+}
+.course-selection:hover{
+    text-decoration: none;
+    color: #36465d;
+}
+.course:hover{
+    background-color: #6495ED;
+    cursor: pointer;
+}
+
+.grid-view-link{
+    color: black;
+}
+
+.course-title-list{
+    display: inline-block;
+}
+
+.course-title-list:hover{
+    text-decoration: none;
+}
+
+@media screen and (min-width:768px){
+    .custom-form input[type="text"]{
+        width:550px !important;
+    }
+    .course-list-first{
+        margin-top:110px;
+    }
+}
+
+@media screen and (min-width:992px){
+    .custom-form input[type="text"]{
+        width:650px !important;
+    }
+}
+@media screen and (min-width:1200px){
+    .custom-form input[type="text"]{
+        width:750px !important;
+    }
+}
