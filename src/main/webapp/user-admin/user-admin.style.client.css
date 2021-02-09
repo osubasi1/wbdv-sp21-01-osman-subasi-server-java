@@ -1,0 +1,24 @@
+body{
+    background-color: cadetblue;
+
+}
+.header{
+    padding-top:10px;
+    padding-bottom:10px;
+    background: darkslategray;
+    color: red;
+}
+
+.navbar-brand{
+    color: beige !important;
+}
+.navbar-toggler-icon{
+    color: beige;
+}
+
+.container-fluid{
+    padding-top: 100px;
+}
+
+
+
