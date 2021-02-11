@@ -4,7 +4,13 @@ var $removeBtn, $editBtn, $createBtn;
 var $searchBtn, $updateBtn;
 var $userRowTemplate, $tbody;
 var userService = new AdminUserServiceClient();
-var users = []
+var users = [{username: 'ada', password: 'xxx',
+    firstname: 'Ada', lastname: 'Lovelace', role: 'FACUlTY' },
+    {username: 'mickey', password: 'xxx',
+        firstname: 'Mike', lastname: 'High', role: 'ADMIN' },
+    {username: 'ady', password: 'xxx',
+        firstname: 'Adam', lastname: 'Smith', role: 'STUDENT' },
+]
 
 function createUser() {
     var newUser = {
@@ -17,10 +23,9 @@ function createUser() {
     userService.createUser(newUser)
         .then(function (actualUser) {
             users.push(actualUser)
-            // alert("it is clickable")
             renderUsers(users)
         })
-    emptyFields()
+    defaultFields()
 }
 
 function deleteUser(event) {
@@ -47,7 +52,7 @@ function selectUser(event) {
 
 }
 
-function emptyFields() {
+function defaultFields() {
 
     $usernameFld.val("");
     $passwordFld.val("");
@@ -69,7 +74,7 @@ function updateUser() {
             users[index] = selectedUser
             renderUsers(users)
         })
-    emptyFields()
+    defaultFields()
 }
 
 function renderUsers(users) {
@@ -77,7 +82,7 @@ function renderUsers(users) {
     for (var i = 0; i < users.length; i++) {
         var user = users[i]
         $tbody
-            .prepend(`
+            .append(`
                         <tr class="wbdv-template wbdv-user wbdv-hidden">
             <td class="wbdv-username">${user.username}</td>
             <td>&nbsp;</td>
@@ -100,7 +105,6 @@ function renderUsers(users) {
 // function findAllUsers() { } // optional - might not need this
 // function findUserById() {  } // optional - might not need this
 function main() {
-
     $tbody = jQuery("tbody#wbdv-tbody-1")
     $removeBtn = $(".wbdv-remove")
     $editBtn = $(".wbdv-edit")

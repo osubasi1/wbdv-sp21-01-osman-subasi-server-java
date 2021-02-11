@@ -1,11 +1,11 @@
 body {
-    background-color: darkgray;
+    background-color: cadetblue;
 }
 
 .header {
     padding-top: 10px;
     padding-bottom: 10px;
-    background: lightblue;
+    background: darkslategray;
     /*font-weight: white;*/
 }
 
@@ -37,7 +37,9 @@ body {
     font-size: 25px;
     margin: 30px;
 }
-
+.navbar-brand{
+    color: beige !important;
+}
 .fa-plus {
     color: white;
 }
